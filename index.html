@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Notifications page</title>
+  </head>
+  <body>
+    <main class="container" aria-labelledby="page-title">
+      <header class="header">
+        <h1 id="page-title" class="title">
+          Notifications
+          <span id="unread-count" class="badge" aria-live="polite">0</span>
+        </h1>
+        <button id="mark-all" class="mark-all" type="button">
+          Mark all as read
+        </button>
+      </header>
+
+      <ul class="notifications" role="list">
+        <li class="notification unread" data-unread="true">
+          <button
+            class="notification__focus"
+            aria-label="Toggle read state"
+          ></button>
+          <img
+            class="avatar"
+            src="./assets/images/avatar-mark-webber.webp"
+            alt="Mark Webber avatar"
+          />
+          <div class="notification__content">
+            <p class="notification__text">
+              <strong class="user">Mark Webber</strong> reacted to your recent
+              post
+              <a href="#" class="link">My first tournament today!</a>
+              <span class="dot" aria-hidden="true"></span>
+            </p>
+            <span class="time" aria-label="1 minute ago">1m ago</span>
+          </div>
+        </li>
+
+        <li class="notification unread" data-unread="true">
+          <button
+            class="notification__focus"
+            aria-label="Toggle read state"
+          ></button>
+          <img
+            class="avatar"
+            src="./assets/images/avatar-angela-gray.webp"
+            alt="Angela Gray avatar"
+          />
+          <div class="notification__content">
+            <p class="notification__text">
+              <strong class="user">Angela Gray</strong> followed you
+              <span class="dot" aria-hidden="true"></span>
+            </p>
+            <span class="time" aria-label="5 minutes ago">5m ago</span>
+          </div>
+        </li>
+
+        <li class="notification unread" data-unread="true">
+          <button
+            class="notification__focus"
+            aria-label="Toggle read state"
+          ></button>
+          <img
+            class="avatar"
+            src="./assets/images/avatar-jacob-thompson.webp"
+            alt="Jacob Thompson avatar"
+          />
+          <div class="notification__content">
+            <p class="notification__text">
+              <strong class="user">Jacob Thompson</strong> has joined your group
+              <a href="#" class="link link--accent">Chess Club</a>
+              <span class="dot" aria-hidden="true"></span>
+            </p>
+            <span class="time" aria-label="1 day ago">1 day ago</span>
+          </div>
+        </li>
+
+        <li class="notification" data-unread="false">
+          <button
+            class="notification__focus"
+            aria-label="Toggle read state"
+          ></button>
+          <img
+            class="avatar"
+            src="./assets/images/avatar-rizky-hasanuddin.webp"
+            alt="Rizky Hasanuddin avatar"
+          />
+          <div class="notification__content">
+            <p class="notification__text">
+              <strong class="user">Rizky Hasanuddin</strong> sent you a private
+              message
+            </p>
+            <span class="time" aria-label="5 days ago">5 days ago</span>
+            <blockquote class="message" aria-label="Private message">
+              Hello, thanks for setting up the Chess Club. I've been a member
+              for a few weeks now and I'm already having lots of fun and
+              improving my game.
+            </blockquote>
+          </div>
+        </li>
+
+        <li class="notification" data-unread="false">
+          <button
+            class="notification__focus"
+            aria-label="Toggle read state"
+          ></button>
+          <img
+            class="avatar"
+            src="./assets/images/avatar-kimberly-smith.webp"
+            alt="Kimberly Smith avatar"
+            width="48"
+            height="48"
+          />
+          <div class="notification__content with-preview">
+            <p class="notification__text">
+              <strong class="user">Kimberly Smith</strong> commented on your
+              picture
+            </p>
+            <span class="time" aria-label="1 week ago">1 week ago</span>
+            <img
+              class="preview"
+              src="./assets/images/image-chess.webp"
+              alt="Your shared photo preview"
+            />
+          </div>
+        </li>
+
+        <li class="notification" data-unread="false">
+          <button
+            class="notification__focus"
+            aria-label="Toggle read state"
+          ></button>
+          <img
+            class="avatar"
+            src="./assets/images/avatar-nathan-peterson.webp"
+            alt="Nathan Peterson avatar"
+          />
+          <div class="notification__content">
+            <p class="notification__text">
+              <strong class="user">Nathan Peterson</strong> reacted to your
+              recent post
+              <a href="#" class="link"
+                >5 end-game strategies to increase your win rate</a
+              >
+            </p>
+            <span class="time" aria-label="2 weeks ago">2 weeks ago</span>
+          </div>
+        </li>
+
+        <li class="notification" data-unread="false">
+          <button
+            class="notification__focus"
+            aria-label="Toggle read state"
+          ></button>
+          <img
+            class="avatar"
+            src="./assets/images/avatar-anna-kim.webp"
+            alt="Anna Kim avatar"
+          />
+          <div class="notification__content">
+            <p class="notification__text">
+              <strong class="user">Anna Kim</strong> left the group
+              <a href="#" class="link link--accent">Chess Club</a>
+            </p>
+            <span class="time" aria-label="2 weeks ago">2 weeks ago</span>
+          </div>
+        </li>
+      </ul>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
