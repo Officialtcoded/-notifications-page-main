@@ -31,14 +31,12 @@ No build step required.
 
 ## Live site
 
-- Live URL: (to be added after deployment)
+- Live URL: ( https://notifications-page-js.netlify.app/ )
 
 ## Author
 
-- Name: (your name)
-- GitHub: (your GitHub handle)
-- Frontend Mentor: (your FEM profile)
+- Name: Taiwo Awolesi
+- GitHub: Officialtcoded
+- Frontend Mentor: @Officialtcoded
 
 ## License
-
-MIT
